@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cynthia Resume</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background:	#E6E6FA;
+      color: #222;
+      margin: 0;
+      padding: 55px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    /* Header 部分：左圖右聯絡 */
+    .top-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 30px;
+    }
+
+    .left-header {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .profile-photo {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 0px solid #000;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+
+    .name {
+      font-size: 32px;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    .title {
+      margin: 5px 0 0 0;
+      color: gray;
+    }
+
+    .right-header {
+      text-align: right;
+      font-size: 14px;
+    }
+
+    .right-header p {
+      margin: 6px 0;
+    }
+
+    .right-header i {
+      margin-right: 8px;
+    }
+
+    /* SECTION 區塊統一樣式 */
+    .section {
+      margin-top: 40px;
+    }
+
+    .section-title {
+      font-size: 20px;
+      border-bottom: 1px dashed #aaa;
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+    }
+
+    .timeline {
+      border-left: 3px solid #000;
+      margin-top: 20px;
+      padding-left: 20px;
+    }
+
+    .timeline-item {
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    .timeline-item::before {
+      content: '';
+      width: 12px;
+      height: 12px;
+      background: #000;
+      border-radius: 50%;
+      position: absolute;
+      left: -27px;
+      top: 3px;
+    }
+
+    /* 兩欄排版 */
+    .two-column {
+      display: flex;
+      gap: 60px;
+      margin-top: 40px;
+    }
+
+    .left-section, .right-section {
+      flex: 1;
+    }
+
+    .skills {
+      margin-top: 15px;
+    }
+
+    .skill {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .skill-name {
+      width: 150px;
+    }
+
+    .dots {
+      display: flex;
+      gap: 4px;
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #ccc;
+    }
+
+    .dot.filled {
+      background: #000;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- 頭部：左圖 + 名字，右聯絡 -->
+    <div class="top-section">
+      <div class="left-header">
+        <img src="IMG_5467.jpg" alt="Cynthia's headshot" class="profile-photo">
+        <h1 class="name">CYNTHIA</h1>
+        <p class="title">Life Expert</p>
+      </div>
+      <div class="left-header">
+        <p><i class="fas fa-phone"></i> 0911-956698</p>
+        <p><i class="fas fa-envelope"></i> qsc135013@gmail.com</p>
+        <p><i class="fas fa-globe"></i> 
+        <a href="https://gogosin.blogspot.com/" target="_blank">https://gogosin.blogspot.com/</a></p>
+        <p><i class="fas fa-map-marker-alt"></i> West District, Taichung</p>
+      </div>
+    </div>
+
+    <!-- PROFILE ME -->
+    <div class="section">
+      <div class="section-title">PROFILE ME</div>
+      <p>我是個做事謹慎細心的處女座女生，對許多事情抱持好奇心，喜歡有變化的人事物。</p>
+    </div>
+
+    <!-- EXPERIENCE -->
+    <div class="section">
+      <div class="section-title">EXPERIENCE</div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <strong>2015 - 2019</strong><br>
+          Senior UI Designer<br>
+          Company Name, City
+        </div>
+        <div class="timeline-item">
+          <strong>2015 - 2019</strong><br>
+          Motion Graphic Designer<br>
+          Company Name, City
+        </div>
+        <div class="timeline-item">
+          <strong>2015 - 2019</strong><br>
+          Promotion Manager<br>
+          Company Name, City
+        </div>
+      </div>
+    </div>
+
+    <!-- EDUCATION -->
+    <div class="section">
+      <div class="section-title">EDUCATION</div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <strong>2015 - 2019</strong><br>
+          Master of Graphic Design<br>
+          University Name
+        </div>
+        <div class="timeline-item">
+          <strong>2015 - 2019</strong><br>
+          Bachelor of Graphic Design<br>
+          University Name
+        </div>
+      </div>
+    </div>
+
+    <!-- AWARDS & SKILLS -->
+    <div class="section two-column">
+      <div class="left-section">
+        <div class="section-title">AWARDS</div>
+        <ul>
+          <li><strong>Global Award</strong> - Communication Design 2016</li>
+          <li><strong>Creative Motion Award</strong> - Motion Design 2018</li>
+        </ul>
+      </div>
+
+      <div class="right-section">
+        <div class="section-title">SKILLS</div>
+        <div class="skills">
+          <div class="skill">
+            <div class="skill-name">Photoshop</div>
+            <div class="dots">
+              <div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill-name">Illustrator</div>
+            <div class="dots">
+              <div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill-name">Graphic Motion</div>
+            <div class="dots">
+              <div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot"></div><div class="dot"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill-name">MS Word</div>
+            <div class="dots">
+              <div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot"></div><div class="dot"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill-name">InDesign</div>
+            <div class="dots">
+              <div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
